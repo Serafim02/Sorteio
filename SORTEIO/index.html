@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="Smartphone.css">
+    <script src="https://kit.fontawesome.com/7cd5631563.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="conteudo">
+            <nav id="nav-header" class="menu">
+                <a href="Inicio">Inicio</a>
+                <a href="Sobre">Sobre</a>
+                <a href="Endereco">Endereco</a>
+                <a href="Contate-nos">Contate-nos</a>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </nav>
+            <a class="menu-barras" onclick="mostrarMenu()">
+                <span id="icone" class="fas fa-bars"></span>
+                <span id="icone" class="fa-xmark"></span>
+                
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <h2>SORTEIO</h2>
+
+        <div class="entradas">
+            <div class="entrada">
+                <label for="min">Minimo:</label>
+                <input type="number" id="min" name="min"> 
+            </div>
+            <div class="entrada">
+                <label for="max">Maximo:</label>
+                <input type="number" id="max" name="max">
+            </div>
+        </div>
+    </div>
+
+    <button id="Sortear">Sortear</button>
+
+    <div id="resultado">
+
+    </div>
+    
+     <script src="script.js">
+
+     </script>
+
+     <script>
+        function mostrarMenu() {
+        var menu = document.getElementById("nav-header");
+        var icone = document.getElementById("icone");
+
+    if (getComputedStyle(menu).display == 'none') {
+        menu.style.display = "flex";
+        icone.classList.remove("fa-bars");
+        icone.classList.add("fa-xmark");
+    } else {
+        menu.style.display = "none";
+        icone.classList.remove("fa-xmark");
+        icone.classList.add("fa-bars");
+    }
+}
+     </script>
+
+
+
+</body>
+</html>

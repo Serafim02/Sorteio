@@ -1,0 +1,19 @@
+.menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(42, 68, 68);
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    height: 300px;
+    width: 100%;
+}
+.menu-barras  {
+    display: initial;
+}
+#icone {
+    color: aliceblue;
+    font-size: 30px;
+}
+
